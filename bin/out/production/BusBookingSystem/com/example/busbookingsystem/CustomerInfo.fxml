@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="412.0" prefWidth="516.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.busbookingsystem.Controler">
+   <children>
+      <Pane layoutX="157.0" layoutY="14.0" prefHeight="354.0" prefWidth="414.0">
+         <children>
+            <Label layoutX="21.0" text="Customer Information">
+               <font>
+                  <Font name="Constantia" size="33.0" />
+               </font>
+            </Label>
+            <Pane layoutX="11.0" layoutY="63.0" prefHeight="49.0" prefWidth="387.0">
+               <children>
+                  <Label layoutX="7.0" layoutY="12.0" text="First Name:">
+                     <font>
+                        <Font name="Candara Light" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="113.0" layoutY="11.0" prefHeight="27.0" prefWidth="260.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="11.0" layoutY="112.0" prefHeight="49.0" prefWidth="387.0">
+               <children>
+                  <Label layoutX="7.0" layoutY="12.0" text="Last Name:">
+                     <font>
+                        <Font name="Candara Light" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="113.0" layoutY="11.0" prefHeight="27.0" prefWidth="247.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="11.0" layoutY="161.0" prefHeight="49.0" prefWidth="387.0">
+               <children>
+                  <Label layoutX="7.0" layoutY="12.0" text="Gender:">
+                     <font>
+                        <Font name="Candara Light" size="20.0" />
+                     </font>
+                  </Label>
+                  <ComboBox layoutX="109.0" layoutY="12.0" prefHeight="28.0" prefWidth="178.0" promptText="Select" />
+               </children>
+            </Pane>
+            <Pane layoutX="14.0" layoutY="210.0" prefHeight="49.0" prefWidth="387.0">
+               <children>
+                  <Label layoutX="7.0" layoutY="12.0" text="Phone#:">
+                     <font>
+                        <Font name="Candara Light" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="113.0" layoutY="11.0" prefHeight="27.0" prefWidth="260.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="14.0" layoutY="259.0" prefHeight="49.0" prefWidth="387.0">
+               <children>
+                  <Label layoutX="7.0" layoutY="12.0" text="Date:">
+                     <font>
+                        <Font name="Candara Light" size="20.0" />
+                     </font>
+                  </Label>
+                  <DatePicker layoutX="112.0" layoutY="12.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="13.0" layoutY="305.0" prefHeight="49.0" prefWidth="387.0">
+               <children>
+                  <Label layoutX="7.0" layoutY="12.0">
+                     <font>
+                        <Font name="Candara Light" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button onAction="#goBack" layoutX="113.0" layoutY="9.0" mnemonicParsing="false" text="Go Back" />
+                  <Button onAction="#book" layoutX="200.0" layoutY="9.0" mnemonicParsing="false" text="Book" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

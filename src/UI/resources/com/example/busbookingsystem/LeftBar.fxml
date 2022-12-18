@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.busbookingsystem.Controler">
+    <children>
+        <AnchorPane fx:id="leftBar" layoutY="3.0" prefHeight="600.0" prefWidth="160.0" style="-fx-background-color: skyblue;">
+            <children>
+                <Label layoutX="31.0" layoutY="125.0" text="Welcome">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="58.0" layoutY="160.0" text="Admin" />
+                <Pane layoutY="193.0" prefHeight="302.0" prefWidth="160.0">
+                    <children>
+                        <Button fx:id="dashboard" layoutX="7.0" layoutY="22.0" mnemonicParsing="false" onAction="#dashboard" prefHeight="31.0" prefWidth="141.0" styleClass="btn" text="Dashboard" />
+                        <Button fx:id="availableBuses" layoutX="7.0" layoutY="75.0" mnemonicParsing="false" onAction="#availableBuses" prefHeight="31.0" prefWidth="141.0" styleClass="btn" text="Availble Buses" />
+                        <Button fx:id="bookTicket" layoutX="7.0" layoutY="127.0" mnemonicParsing="false" onAction="#bookingTicket" prefHeight="31.0" prefWidth="141.0" styleClass="btn" text="Booking Ticket" />
+                        <Button fx:id="customer" layoutX="7.0" layoutY="178.0" mnemonicParsing="false" onAction="#customers" prefHeight="31.0" prefWidth="141.0" styleClass="btn" text="Customers" />
+                  <Button id="signout" layoutX="5.0" layoutY="227.0" mnemonicParsing="false" onAction="#signout" prefHeight="31.0" prefWidth="141.0" styleClass="btn" text="Sign Out" />
+
+                    </children>
+                </Pane>
+                <ImageView fitHeight="125.0" fitWidth="141.0" layoutX="11.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="E:\BBS_Project\BusBookingSystem\Images\UserIcon.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+
+        </AnchorPane>
+        <AnchorPane fx:id="rightSide" layoutX="162.0" layoutY="3.0" prefHeight="550.0" prefWidth="620.0">
+
+        </AnchorPane>
+
+    </children>
+
+
+</AnchorPane>

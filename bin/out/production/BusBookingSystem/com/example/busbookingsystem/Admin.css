@@ -1,0 +1,20 @@
+.btn:hover{
+  -fx-background-color: #786b6b;
+
+}
+#User{
+
+  -fx-start-margin: 10px;
+  -fx-arc-width: 300px;
+  -fx-background-color: red;
+}
+#admin{
+
+  -fx-font-size: 16px;
+
+
+}
+#welcome{
+
+}
+

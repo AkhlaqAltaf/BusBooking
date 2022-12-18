@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.busbookingsystem.Controler"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <AnchorPane fx:id="leftBar" layoutY="3.0" prefHeight="550.0" prefWidth="161.0" style="-fx-background-color: skyblue;">
+            <children>
+                <Label layoutX="31.0" layoutY="125.0" text="Welcome">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="58.0" layoutY="160.0" text="Admin" />
+                <Pane layoutY="193.0" prefHeight="302.0" prefWidth="161.0">
+                    <children>
+                        <Button onAction="#dashboard" fx:id="dashboard" layoutX="7.0" layoutY="22.0" mnemonicParsing="false"  prefHeight="31.0" prefWidth="141.0" styleClass="btn" text="Dashboard" />
+                        <Button onAction="#availableBuses" fx:id="availableBuses" layoutX="7.0" layoutY="75.0" mnemonicParsing="false"  prefHeight="31.0" prefWidth="141.0" styleClass="btn" text="Availble Buses" />
+                        <Button onAction="#bookingTicket" fx:id="bookTicket" layoutX="7.0" layoutY="127.0" mnemonicParsing="false"  prefHeight="31.0" prefWidth="141.0" styleClass="btn" text="Booking Ticket" />
+                        <Button onAction="#customers" fx:id="customer" layoutX="7.0" layoutY="178.0" mnemonicParsing="false"  prefHeight="31.0" prefWidth="141.0" styleClass="btn" text="Customers" />
+
+                    </children>
+                </Pane>
+                <ImageView fitHeight="125.0" fitWidth="141.0" layoutX="11.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="E:\BBS_Project\BusBookingSystem\Images\UserIcon.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+
+        </AnchorPane>
+        <AnchorPane fx:id="rightSide" layoutX="162.0" layoutY="3.0" prefHeight="550.0" prefWidth="620.0"  >
+
+        </AnchorPane>
+
+    </children>
+
+
+</AnchorPane>

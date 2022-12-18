@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.PasswordField?>
+<AnchorPane fx:id="login" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.busbookingsystem.Auth">
+   <children>
+
+
+      <AnchorPane fx:id="signin" layoutX="292.0" prefHeight="410.0" prefWidth="400.0">
+         <children>
+            <Label layoutX="50.0" layoutY="210.0" text="User Name:" />
+            <TextField fx:id="getEmail" layoutX="123.0" layoutY="206.0" prefHeight="25.0" prefWidth="192.0" />
+            <Label layoutX="105.0" layoutY="72.0" prefHeight="101.0" prefWidth="155.0" text="SignIn" textAlignment="JUSTIFY" textFill="#44afc9" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Corbel" size="51.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <PasswordField fx:id="getPassword" layoutX="123.0" layoutY="262.0" prefHeight="25.0" prefWidth="192.0"  />
+            <Label layoutX="53.0" layoutY="266.0" text="Password:" />
+            <Button layoutX="162.0" layoutY="319.0" mnemonicParsing="false" onAction="#loginAuth" style="-fx-background-color: skyblue;" text="Sign IN">
+               <effect>
+                  <Glow>
+                     <input>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+
+                           </light>
+                        </Lighting>
+                     </input>
+                  </Glow>
+               </effect>
+            </Button>
+            <Button layoutX="159.0" layoutY="365.0" mnemonicParsing="false" onAction="#logupAuth" text="Register">
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Label fx:id="error" layoutX="139.0" layoutY="32.0" textFill="#0ee2de" text="" style="-fx-background-color: red" />
+         </children>
+      </AnchorPane>
+
+
+
+
+      <AnchorPane prefHeight="600.0" prefWidth="315.0" style="-fx-background-color: skyblue;">
+         <children>
+            <ImageView fitHeight="351.0" fitWidth="302.0" layoutX="8.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Images/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
